@@ -48,19 +48,19 @@ const DuaOfTheDay: React.FC = () => {
                 </div>
 
                 <div className="space-y-6">
-                  <div className="bg-background/40 p-4 rounded-xl border border-primary/10">
-                    <p className="text-sm uppercase tracking-[0.2em] text-foreground/40 mb-2 font-bold">Transliteration</p>
-                    <p className="text-md md:text-lg italic font-medium">{currentDua.transliteration}</p>
+                  <div className="bg-background/40 p-6 rounded-xl border border-primary/10">
+                    <p className="text-sm uppercase tracking-[0.2em] text-foreground/40 mb-3 font-bold">Transliteration</p>
+                    <p className="text-lg md:text-xl italic font-medium leading-relaxed">{currentDua.transliteration}</p>
                   </div>
                   
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-background/40 p-6 rounded-xl border border-secondary/10 text-center space-y-2">
+                    <div className="bg-background/40 p-6 rounded-xl border border-secondary/10 text-center space-y-3">
                        <p className="text-sm uppercase tracking-[0.2em] text-foreground/40 font-bold">English Meaning</p>
-                       <p className="text-md leading-relaxed">{currentDua.english}</p>
+                       <p className="text-lg md:text-xl leading-relaxed">{currentDua.english}</p>
                     </div>
-                    <div className="bg-background/40 p-6 rounded-xl border border-secondary/10 text-center space-y-2">
+                    <div className="bg-background/40 p-6 rounded-xl border border-secondary/10 text-center space-y-3">
                        <p className="text-sm uppercase tracking-[0.2em] text-foreground/40 font-bold urdu-font">Urdu Meaning</p>
-                       <p className="text-md leading-relaxed urdu-font">{currentDua.urdu}</p>
+                       <p className="text-lg md:text-xl leading-relaxed urdu-font">{currentDua.urdu}</p>
                     </div>
                   </div>
                 </div>
