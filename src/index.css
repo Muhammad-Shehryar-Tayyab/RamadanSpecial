@@ -1,0 +1,89 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap');
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    --background: 210 17% 96%;
+    --foreground: 162 72% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 162 72% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 162 72% 10%;
+    --primary: 162 72% 17%;
+    --primary-foreground: 39 90% 95%;
+    --secondary: 39 90% 73%;
+    --secondary-foreground: 162 72% 10%;
+    --muted: 210 17% 90%;
+    --muted-foreground: 162 20% 40%;
+    --accent: 180 71% 37%;
+    --accent-foreground: 210 17% 96%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 17% 96%;
+    --border: 162 30% 85%;
+    --input: 162 30% 85%;
+    --ring: 162 72% 17%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 225 50% 8%;
+    --foreground: 39 90% 95%;
+    --card: 225 50% 12%;
+    --card-foreground: 39 90% 95%;
+    --popover: 225 50% 10%;
+    --popover-foreground: 39 90% 95%;
+    --primary: 39 90% 73%;
+    --primary-foreground: 225 50% 8%;
+    --secondary: 257 28% 26%;
+    --secondary-foreground: 39 90% 95%;
+    --muted: 225 30% 20%;
+    --muted-foreground: 225 20% 70%;
+    --accent: 180 71% 37%;
+    --accent-foreground: 39 90% 95%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 39 90% 95%;
+    --border: 257 28% 30%;
+    --input: 257 28% 30%;
+    --ring: 39 90% 73%;
+  }
+}
+
+@layer utilities {
+  .glow-gold {
+    text-shadow: 0 0 10px rgba(247, 208, 129, 0.5), 0 0 20px rgba(247, 208, 129, 0.3);
+  }
+  .glow-teal {
+    text-shadow: 0 0 10px rgba(27, 163, 163, 0.5), 0 0 20px rgba(27, 163, 163, 0.3);
+  }
+  .glass {
+    @apply bg-background/60 backdrop-blur-md border border-white/10;
+  }
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
+  }
+  .urdu-font {
+    font-family: 'Noto Nastaliq Urdu', serif;
+  }
+  .font-arabic {
+    font-family: 'Amiri', serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
