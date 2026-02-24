@@ -25,17 +25,35 @@ const Footer: React.FC = () => {
           {/* Quick Links */}
           <div className="flex flex-col items-center justify-center space-y-4">
              <div className="flex gap-6 mb-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-background/50 border border-border/50 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+                <a 
+                  href="https://x.com/ShehryarTayyab" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-background/50 border border-border/50 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+                  aria-label="Twitter/X"
+                >
                    <Twitter className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-background/50 border border-border/50 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+                <a 
+                  href="https://www.instagram.com/mshehryartayyab?igsh=MWxuN3d0c2NkdWN4ZA==" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-background/50 border border-border/50 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+                  aria-label="Instagram"
+                >
                    <Instagram className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-background/50 border border-border/50 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+                <a 
+                  href="https://github.com/Muhammad-Shehryar-Tayyab" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-background/50 border border-border/50 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+                  aria-label="GitHub"
+                >
                    <Github className="w-4 h-4" />
                 </a>
              </div>
-             <p className="text-xs uppercase tracking-[0.3em] text-foreground/40 font-bold">Stay connected with our community</p>
+             <p className="text-xs uppercase tracking-[0.3em] text-foreground/40 font-bold">Connect with Shehryar Tayyab</p>
           </div>
 
           {/* Copyright & Signoff */}

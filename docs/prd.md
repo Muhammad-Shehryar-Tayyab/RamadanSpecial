@@ -91,7 +91,10 @@ To create a serene digital experience that combines modern UI design with Islami
 ### 3.8 Section 7: About Author
 - Brief introduction about the website creator
 - Personal message or motivation behind creating the website
-- Contact information or social media links (optional)
+- Social media links:
+  - Instagram: https://www.instagram.com/mshehryartayyab?igsh=MWxuN3d0c2NkdWN4ZA==
+  - Twitter/X: https://x.com/ShehryarTayyab
+  - GitHub: https://github.com/Muhammad-Shehryar-Tayyab
 - Clean, elegant card design consistent with overall theme
 
 ### 3.9 Footer
