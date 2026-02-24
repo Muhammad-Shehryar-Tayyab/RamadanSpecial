@@ -27,6 +27,25 @@ const Navbar: React.FC = () => {
 
   const toggleTheme = () => setIsDarkMode(!isDarkMode);
 
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    if (href === '#') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        const offset = 80; // Account for fixed navbar
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+  };
+
   const navLinks = [
     { name: 'Home', href: '#' },
     { name: 'Journey', href: '#tracker' },
@@ -61,7 +80,8 @@ const Navbar: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-semibold uppercase tracking-widest text-foreground/70 hover:text-primary transition-colors"
+              onClick={(e) => handleSmoothScroll(e, link.href)}
+              className="text-sm font-semibold uppercase tracking-widest text-foreground/70 hover:text-primary transition-colors cursor-pointer"
             >
               {link.name}
             </a>
@@ -104,7 +124,8 @@ const Navbar: React.FC = () => {
                   <a
                     key={link.name}
                     href={link.href}
-                    className="text-xl font-bold uppercase tracking-widest text-foreground/80 hover:text-primary transition-colors"
+                    onClick={(e) => handleSmoothScroll(e, link.href)}
+                    className="text-xl font-bold uppercase tracking-widest text-foreground/80 hover:text-primary transition-colors cursor-pointer"
                   >
                     {link.name}
                   </a>
